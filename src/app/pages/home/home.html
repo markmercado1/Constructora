@@ -1,0 +1,226 @@
+<div class="flex flex-col min-h-screen">
+  <app-navbar></app-navbar>
+
+  <main class="flex-grow">
+    <!-- Hero Section -->
+    <section
+      class="relative bg-cover bg-center text-white"
+      style="background-image: url('portada.jpg')"
+    >
+      <!-- Capa oscura encima de la imagen -->
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <!-- Contenido -->
+      <div
+        class="relative max-w-7xl mx-auto px-6 py-24 lg:py-32 flex flex-col items-center text-center"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Construyendo Futuros
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl">
+          Transformamos sueños en realidades con innovación, calidad y confianza
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <button
+            class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg text-lg font-semibold transition duration-300"
+          >
+            Nuestros Proyectos
+          </button>
+          <button
+            class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg text-lg font-semibold transition duration-300"
+          >
+            Solicitar Cotización
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div class="p-6">
+            <div class="text-4xl font-bold text-blue-700 mb-2">50+</div>
+            <div class="text-gray-600">Proyectos Completados</div>
+          </div>
+          <div class="p-6">
+            <div class="text-4xl font-bold text-blue-700 mb-2">15+</div>
+            <div class="text-gray-600">Años de Experiencia</div>
+          </div>
+          <div class="p-6">
+            <div class="text-4xl font-bold text-blue-700 mb-2">200+</div>
+            <div class="text-gray-600">Clientes Satisfechos</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Proyectos Destacados
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Descubre nuestras obras más emblemáticas que reflejan nuestro
+            compromiso con la excelencia
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-4">
+              <!-- Reemplaza con tu imagen -->
+              <img
+                src="construccion1.jpg"
+                alt="Torres del Sol - Complejo residencial de lujo"
+                class="w-full h-64 object-cover"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-90 transition duration-300 flex items-center justify-center"
+              >
+                <button
+                  class="text-white border-2 border-white px-6 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300"
+                >
+                  Ver Proyecto
+                </button>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900">Torres del Sol</h3>
+            <p class="text-gray-600">Complejo residencial de lujo</p>
+          </div>
+
+          <!-- Project 2 -->
+          <!-- Project 2 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-4">
+              <img
+                src="construccion2.jpg"
+                alt="Mall Pacifico - Centro comercial moderno"
+                class="w-full h-64 object-cover"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-90 transition duration-300 flex items-center justify-center"
+              >
+                <button
+                  class="text-white border-2 border-white px-6 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300"
+                >
+                  Ver Proyecto
+                </button>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900">Mall Pacifico</h3>
+            <p class="text-gray-600">Centro comercial moderno</p>
+          </div>
+
+          <!-- Project 3 -->
+          <!-- Project 3 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-4">
+              <img
+                src="construccion3.jpg"
+                alt="Villa Serena - Residencias exclusivas"
+                class="w-full h-64 object-cover"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-90 transition duration-300 flex items-center justify-center"
+              >
+                <button
+                  class="text-white border-2 border-white px-6 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300"
+                >
+                  Ver Proyecto
+                </button>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900">Villa Serena</h3>
+            <p class="text-gray-600">Residencias exclusivas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Nuestros Servicios
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Ofrecemos soluciones integrales para todos tus proyectos
+            constructivos
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <span class="text-2xl">🏗️</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Construcción</h3>
+            <p class="text-gray-600">
+              Edificaciones residenciales y comerciales
+            </p>
+          </div>
+
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <span class="text-2xl">📐</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Diseño Arquitectónico</h3>
+            <p class="text-gray-600">Diseños innovadores y funcionales</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <span class="text-2xl">🔧</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Remodelaciones</h3>
+            <p class="text-gray-600">Transformamos espacios existentes</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <span class="text-2xl">🏠</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Consultoría</h3>
+            <p class="text-gray-600">Asesoramiento especializado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-blue-700 text-white py-20">
+      <div class="max-w-4xl mx-auto text-center px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          ¿Listo para comenzar tu proyecto?
+        </h2>
+        <p class="text-xl mb-8">
+          Contáctanos hoy mismo y recibe una cotización personalizada sin
+          compromiso
+        </p>
+        <button
+          class="bg-white text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition duration-300"
+        >
+          Solicitar Cotización Gratuita
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <app-footer></app-footer>
+</div>
