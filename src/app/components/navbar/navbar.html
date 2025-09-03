@@ -6,7 +6,23 @@
         <span class="text-2xl font-bold text-blue-700">UrbanX Constructora</span>
       </div>
 
-      <!-- Links -->
+      <!-- Botón hamburguesa (móvil) -->
+      <div class="flex items-center md:hidden">
+        <button (click)="toggleMenu()" class="text-gray-700 focus:outline-none">
+          <!-- Icono hamburguesa -->
+          <svg *ngIf="!isMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <!-- Icono X -->
+          <svg *ngIf="isMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Links (pantallas grandes) -->
       <div class="hidden md:flex items-center space-x-8">
         <a href="#inicio" class="text-gray-700 hover:text-blue-700 font-medium">Inicio</a>
         <a href="/sobre-nosotros" class="text-gray-700 hover:text-blue-700 font-medium">Sobre Nosotros</a>
@@ -14,7 +30,7 @@
         <a href="#contacto" class="text-gray-700 hover:text-blue-700 font-medium">Contacto</a>
       </div>
 
-      <!-- Botón CTA -->
+      <!-- Botón CTA (pantallas grandes) -->
       <div class="hidden md:flex items-center">
         <a href="#cotizacion"
            class="bg-blue-700 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-800 transition">
@@ -22,5 +38,14 @@
         </a>
       </div>
     </div>
+  </div>
+
+  <!-- Menú móvil -->
+  <div *ngIf="isMenuOpen" class="md:hidden bg-white shadow-lg">
+    <a href="#inicio" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Inicio</a>
+    <a href="/sobre-nosotros" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sobre Nosotros</a>
+    <a href="#proyectos" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Proyectos</a>
+    <a href="#contacto" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contacto</a>
+    <a href="#cotizacion" class="block px-4 py-2 text-white bg-blue-700 hover:bg-blue-800">Cotización</a>
   </div>
 </nav>
